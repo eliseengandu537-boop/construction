@@ -1,0 +1,14 @@
+.sites-runtime/
+node_modules/
+.qa/
+*.tar.gz
+*.log
+.next/
+out/
+.npm-cache/
+.openai/
+.env*
+!.env.example
+/inspect-reference.mjs
+/download-assets.mjs
+/qa-next.mjs
