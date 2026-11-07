@@ -20,4 +20,6 @@ Homepage footage and its poster: [Pexels License](https://www.pexels.com/license
 
 Typography: DM Sans and Manrope, open-source fonts distributed through Google Fonts. Local WOFF2 copies use the same Latin subsets as the supplied design reference.
 
-The Ngenzeni building mark and interface icons are original SVG code created for this site. Reference site brand marks and industry-specific imagery are not included.
+The WhatsApp glyph (`public/assets/whatsapp.svg`) is from [Bootstrap Icons](https://icons.getbootstrap.com/icons/whatsapp/), rendered in white. Its MIT license is included in `public/assets/bootstrap-icons-LICENSE.txt`.
+
+The Ngenzeni building mark and remaining interface icons are original SVG code created for this site. Reference site brand marks and industry-specific imagery are not included.
