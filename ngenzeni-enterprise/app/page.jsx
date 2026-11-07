@@ -14,6 +14,7 @@ function Icon({ name = 'arrow', className = '' }) {
     chevron: <path d="m7 10 5 5 5-5" />,
     phone: <path d="M8 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-4l-5-2-2 3a14 14 0 0 1-7-7l3-2Z" />,
     chat: <><path d="M21 11.5a9 9 0 0 1-9.5 9 10 10 0 0 1-4-.9L3 21l1.4-4.5A9.5 9.5 0 1 1 21 11.5Z" /><path d="m8 7 2 3-1 1c1 2 2 3 4 3l1-1 3 2" /></>,
+    whatsapp: <><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" /><g transform="translate(6 6) scale(.5)"><path d="M8 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-4l-5-2-2 3a14 14 0 0 1-7-7l3-2Z" /></g></>,
     shield: <><path d="m12 3 8 4v6c0 5-8 8-8 8s-8-3-8-8V7Z" /><path d="m8 12 3 3 5-6" /></>,
     plan: <><path d="M5 3h11l3 3v15H5Z M9 8h5M9 12h6M9 16h4" /></>,
     people: <><circle cx="9" cy="8" r="3" /><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v3" /></>,
@@ -186,7 +187,7 @@ export default function Home() {
     </main>
 
     <footer className="site-footer"><div className="shell"><div className="footer-grid"><div className="footer-brand"><Brand footer /><p>Strong foundations.<br />New possibilities.</p><span>Construction. With purpose.</span></div><div><h3>WHAT WE DO</h3>{services.slice(0,4).map(item=><button key={item.id} onClick={()=>openService(item)}>{item.title}</button>)}</div><div><h3>EXPLORE</h3><a href="#about">About Ngenzeni</a><a href="#process">Our process</a><a href="#resources">Project checklist</a><a href="#faqs">Questions & answers</a></div><div><h3>LET'S TALK</h3><a href={`tel:${PHONE}`}>072 605 3707</a><span>Slingene Sigubudu</span><span>Director</span><a href="#contact" className="footer-quote">Start a conversation<Icon /></a></div></div><div className="footer-bottom"><span>© 2026 Ngenzeni Enterprise (PTY) LTD. All rights reserved.</span><button onClick={()=>privacyDialog.current.showModal()}>Privacy & website information</button><a href="#home">BACK TO TOP <Icon name="down" /></a></div></div></footer>
-    <a className="floating-whatsapp" href={WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label="Chat with Ngenzeni Enterprise on WhatsApp"><Icon name="chat" /><span>Let's talk</span></a>
+    <a className="floating-whatsapp" href={WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label="Chat with Ngenzeni Enterprise on WhatsApp"><Icon name="whatsapp" /></a>
 
     <dialog className="info-dialog" ref={serviceDialog} aria-labelledby="service-title" onClose={()=>setService(null)} onClick={backdropClick} data-lenis-prevent><button className="dialog-close icon-button" aria-label="Close service information" onClick={()=>serviceDialog.current.close()}><Icon name="close" /></button>{service&&<><img className="dialog-photo" src={`/assets/${service.image}`} alt={service.alt} /><div className="dialog-body"><span className="section-label">Your next project</span><h2 id="service-title">{service.title}</h2><p>{service.description}</p><h3>What to discuss</h3><ul>{service.details.map(detail=><li key={detail}><Icon name="check" />{detail}</li>)}</ul><p className="dialog-note">We confirm the final scope, availability, materials and specialist requirements after reviewing your project.</p><Button href="#contact" onClick={()=>enquire(service)}>Enquire about this service</Button></div></>}</dialog>
 
