@@ -24,12 +24,12 @@ npm start
 ## What is included
 
 - Floating navigation, dropdown menus and service search.
-- Full-screen construction hero with image movement.
+- Full-screen construction video that autoplays silently and loops without visible controls, with a still poster for loading, reduced-motion and data-saving preferences.
 - Smooth scrolling, word-by-word heading reveals, section entrances and image parallax.
 - Six service guides, a horizontal service carousel and enquiry links.
 - Company introduction, residential/commercial information, construction process, FAQs and a downloadable planning checklist.
 - Responsive navigation, keyboard-accessible dialogs and reduced-motion support.
-- Local photos and fonts; no runtime font or image CDN dependency.
+- Local video, photos and fonts; no runtime media CDN dependency.
 - Call and WhatsApp links for Director Slingene Sigubudu: **072 605 3707**.
 
 The enquiry form prepares a WhatsApp message for the visitor to review and send. It does not send email, store enquiries, or require a backend account. It has a fallback link if a browser blocks the new WhatsApp tab.

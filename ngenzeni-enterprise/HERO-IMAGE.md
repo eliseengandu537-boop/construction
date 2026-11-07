@@ -1,0 +1,9 @@
+# Homepage background
+
+Final asset: `public/assets/hero-architecture.webp`
+
+Created using the built-in image generation tool, then encoded as WebP for the website. This is an illustrative architectural concept, not a photograph of a completed Ngenzeni Enterprise project.
+
+## Generation prompt
+
+Use case: ads-marketing. Asset type: full-bleed background photograph for a premium South African construction company website. Create one beautiful photorealistic architectural visualization, landscape 16:9. A stunning contemporary two-storey home with warm natural sandstone, off-white plaster, dark slim window frames, floor-to-ceiling glazing, oak-toned timber detailing, a generous cantilever and carefully built terraces. Elegant indigenous landscaping, small ornamental grasses and a clean paved driveway with subtle leading lines, no swimming pool. Situated in a leafy South African suburban landscape, distant soft mountains, naturally plausible scale and construction. Golden hour with rich warm sunlight grazing the stone and softly glowing interior windows, soft blue-gray sky, sophisticated editorial architectural photography, real material texture, believable straight geometry, beautifully composed and optimistic. Camera at slightly elevated human height, wide lens without distortion, entire building visible. Place the main home mostly across the center-right 60 percent, leaving the left 40 percent less detailed with softly shaded trees, lawn and open sky so white website headings will read well there. Keep important building details within the central vertical portion so a mobile crop near 65% horizontal still looks attractive. Make it a bright inviting scene with a naturally darker left foreground, NOT a dark muddy image. No lettering, no logos, no watermarks, no people, no cars, no scaffolding, no unfinished building, no image borders. Output only the landscape image.

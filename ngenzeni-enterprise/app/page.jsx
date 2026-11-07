@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Motion, { ScrollHeading } from './components/Motion';
+import HeroBackground from './components/HeroBackground';
 import { services, projectTypes, faqs } from './content';
 
 const PHONE = '+27726053707';
@@ -154,7 +155,7 @@ export default function Home() {
 
     <main id="main">
       <section className="hero" id="home">
-        <div className="hero-photo"><img src="/assets/hero.jpg" alt="Construction crane above the concrete structure of a new building" fetchPriority="high" /></div><div className="hero-overlay" />
+        <HeroBackground /><div className="hero-overlay" />
         <div className="shell hero-inner"><div className="hero-copy"><span className="section-label hero-label"><i /> Your partner in building</span><h1>The foundation for<br />what comes next<span>.</span></h1><p>Construction, renovations and property improvements.<br /> Your vision. Strong foundations. New possibilities.</p><div className="hero-actions"><Button href="#services">Explore our services</Button><Button href="#contact" secondary>Let's talk about your build</Button></div><div className="hero-trust"><span><Icon name="shield" /></span><div><strong>Every project starts with a conversation</strong><small>Personal attention. A clear way forward.</small></div></div></div><a className="hero-scroll-cue" href="#about"><span><Icon name="down" /></span>Scroll to discover</a></div>
       </section>
 
