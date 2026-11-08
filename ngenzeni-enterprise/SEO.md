@@ -11,6 +11,7 @@ Canonical website: **https://www.ngenzeni.co.za**. This matches the existing Ver
 - Branded 1200 × 630 PNG sharing card at `/opengraph-image`, rendered locally by Next.js without external image/font requests.
 - Vercel preview builds use `noindex, nofollow` and disallow crawling. Production pages allow indexing.
 - Optional `GOOGLE_SITE_VERIFICATION` support for a genuine Search Console HTML verification token. Omit the variable until a token exists; never add placeholder verification codes.
+- Google's owner-downloaded HTML verification file is served at `/google6c800cb304be1a1a.html`. Keep this file in `public/` after verification so Google can continue checking ownership. Publishing the file does not itself complete the Verify step in the owner's Search Console account.
 
 ## After production DNS works
 
