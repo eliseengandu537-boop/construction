@@ -22,4 +22,4 @@ Typography: DM Sans and Manrope, open-source fonts distributed through Google Fo
 
 The WhatsApp glyph (`public/assets/whatsapp.svg`) is from [Bootstrap Icons](https://icons.getbootstrap.com/icons/whatsapp/), rendered in white. Its MIT license is included in `public/assets/bootstrap-icons-LICENSE.txt`.
 
-The Ngenzeni building mark and remaining interface icons are original SVG code created for this site. Reference site brand marks and industry-specific imagery are not included.
+The company logo (`public/assets/ngenzeni-logo.webp`) is a transparent version of the logo supplied by the user. Its footer variant (`public/assets/ngenzeni-logo-footer.webp`) uses white in place of navy while preserving the orange details and transparency. Both were prepared with the built-in image tool and encoded as WebP with alpha preserved; see [logo preparation notes](./LOGO-PREPARATION.md) for the exact prompts. The favicon is a simplified SVG adaptation of the roof and window motif. The remaining interface icons are original SVG code created for this site. Reference site brand marks and industry-specific imagery are not included.

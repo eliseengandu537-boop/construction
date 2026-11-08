@@ -24,6 +24,7 @@ npm start
 ## What is included
 
 - Floating navigation, dropdown menus and service search.
+- The supplied Ngenzeni roof logo, orange controls and accents, warm cream backgrounds, and dark navy text across the homepage and privacy page.
 - Full-screen construction video that autoplays silently and loops without visible controls, with a still poster for loading, reduced-motion and data-saving preferences.
 - Smooth scrolling, word-by-word heading reveals, section entrances and image parallax.
 - Six service guides, a horizontal service carousel and enquiry links.
@@ -31,6 +32,7 @@ npm start
 - Responsive navigation, keyboard-accessible dialogs and reduced-motion support.
 - Local video, photos and fonts; no runtime media CDN dependency.
 - Call and WhatsApp links for Director Slingene Sigubudu: **072 605 3707**.
+- A dedicated `/privacy-policy` page with company registration details, the WhatsApp enquiry flow, POPIA rights and privacy contacts. Linked from the footer and enquiry form.
 
 The enquiry form prepares a WhatsApp message for the visitor to review and send. It does not send email, store enquiries, or require a backend account. It has a fallback link if a browser blocks the new WhatsApp tab.
 
@@ -38,11 +40,16 @@ The enquiry form prepares a WhatsApp message for the visitor to review and send.
 
 - `app/page.jsx`: page sections, navigation, interactions and enquiry form.
 - `app/content.js`: services, project types and FAQs.
+- `app/privacy-policy/page.jsx`: privacy policy, company particulars and page metadata.
+- `app/privacy-policy/privacy.module.css`: responsive privacy page styling.
+- `app/components/Brand.jsx`: shared company mark and homepage link.
 - `app/components/Motion.jsx`: smooth scrolling and scroll effects.
 - `app/globals.css`: colours, typography, layout and responsive styles.
 - `app/layout.jsx`: page title and metadata.
 - `public/assets/`: local photographs and fonts.
 
-Service scope and availability need confirmation directly with the company. Photographs are illustrative, not claims of completed company work. No unverified years of experience, certifications, projects, testimonials or address have been added.
+Service scope and availability need confirmation directly with the company. Photographs are illustrative, not claims of completed company work. The privacy page uses the company registration particulars and office address from the user-provided CIPC disclosure certificate issued on 23 June 2021; it does not reproduce the certificate scan, personal identity number or tax number. No unverified years of experience, certifications, projects or testimonials have been added.
+
+The policy reflects the current browser-to-WhatsApp form. Update it when collection, hosting, tracking, retention or business contact details change. Legal references: [POPIA](https://www.gov.za/documents/protection-personal-information-act), [Information Regulator rights guidance](https://inforegulator.org.za/privacy-notice/), [complaints](https://inforegulator.org.za/complaints/), [contact details](https://inforegulator.org.za/contact-us/) and [WhatsApp privacy policy](https://www.whatsapp.com/legal/privacy-policy), checked on 8 November 2026.
 
 The site is configured for local Next.js development. No online deployment has been completed.
