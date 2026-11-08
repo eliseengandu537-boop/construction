@@ -27,7 +27,8 @@ npm start
 - The supplied Ngenzeni roof logo, orange controls and accents, warm cream backgrounds, and dark navy text across the homepage and privacy page.
 - Full-screen construction video that autoplays silently and loops without visible controls, with a still poster for loading, reduced-motion and data-saving preferences.
 - Smooth scrolling, word-by-word heading reveals, section entrances and image parallax.
-- Six service guides, a horizontal service carousel and enquiry links.
+- Six permanent service pages with practical guides, a horizontal service carousel and enquiry links.
+- Search metadata, canonical URLs, structured business data, a sitemap, robots.txt and a branded social sharing image. See [SEO.md](SEO.md) for Google Search Console setup after DNS is connected.
 - Company introduction, residential/commercial information, construction process, FAQs and a downloadable planning checklist.
 - Responsive navigation, keyboard-accessible dialogs and reduced-motion support.
 - Local video, photos and fonts; no runtime media CDN dependency.
@@ -38,7 +39,11 @@ The enquiry form prepares a WhatsApp message for the visitor to review and send.
 
 ## Edit the site
 
-- `app/page.jsx`: page sections, navigation, interactions and enquiry form.
+- `app/page.jsx`: homepage metadata, structured data and server-rendered entry point.
+- `app/components/Home.jsx`: homepage sections, navigation, interactions and enquiry form.
+- `app/lib/site.js`: canonical domain, company information and shared search metadata.
+- `app/lib/service-guides.js`: detailed service content and questions.
+- `app/services/[slug]/page.jsx`: static service pages and service/breadcrumb structured data.
 - `app/content.js`: services, project types and FAQs.
 - `app/privacy-policy/page.jsx`: privacy policy, company particulars and page metadata.
 - `app/privacy-policy/privacy.module.css`: responsive privacy page styling.
@@ -48,8 +53,8 @@ The enquiry form prepares a WhatsApp message for the visitor to review and send.
 - `app/layout.jsx`: page title and metadata.
 - `public/assets/`: local photographs and fonts.
 
-Service scope and availability need confirmation directly with the company. Photographs are illustrative, not claims of completed company work. The privacy page uses the company registration particulars and office address from the user-provided CIPC disclosure certificate issued on 23 June 2021; it does not reproduce the certificate scan, personal identity number or tax number. No unverified years of experience, certifications, projects or testimonials have been added.
+Service scope and availability need confirmation directly with the company. Photographs are illustrative, not claims of completed company work. The privacy page uses registration particulars from the user-provided CIPC disclosure certificate issued on 23 June 2021 and the contact address confirmed by the owner on 8 November 2026; it does not reproduce the certificate scan, personal identity number or tax number. No unverified years of experience, certifications, projects or testimonials have been added.
 
 The policy reflects the current browser-to-WhatsApp form. Update it when collection, hosting, tracking, retention or business contact details change. Legal references: [POPIA](https://www.gov.za/documents/protection-personal-information-act), [Information Regulator rights guidance](https://inforegulator.org.za/privacy-notice/), [complaints](https://inforegulator.org.za/complaints/), [contact details](https://inforegulator.org.za/contact-us/) and [WhatsApp privacy policy](https://www.whatsapp.com/legal/privacy-policy), checked on 8 November 2026.
 
-The site is configured for local Next.js development. No online deployment has been completed.
+The project runs locally and has an existing Vercel deployment. The intended custom domain is `https://www.ngenzeni.co.za`; DNS activation and Google Search Console verification must be completed before confirming public indexing.

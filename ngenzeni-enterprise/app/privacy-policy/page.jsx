@@ -1,17 +1,13 @@
 import Link from 'next/link';
 import Brand from '../components/Brand';
 import styles from './privacy.module.css';
+import { pageMetadata, site } from '../lib/site';
 
-export const metadata = {
-  title: 'Privacy Policy | Ngenzeni Enterprise (PTY) LTD',
+export const metadata = pageMetadata({
+  title: 'Privacy Policy',
   description: 'Company registration details, how our website and WhatsApp enquiries handle personal information, and how to contact Ngenzeni Enterprise about privacy.',
-  openGraph: {
-    title: 'Privacy Policy | Ngenzeni Enterprise (PTY) LTD',
-    description: 'Our company details, your personal information and your privacy rights.',
-    type: 'website',
-    locale: 'en_ZA',
-  },
-};
+  path: '/privacy-policy',
+});
 
 const PHONE = '+27726053707';
 const PRIVACY_WHATSAPP = 'https://wa.me/27726053707?text=Hello%20Slingene%2C%20I%20have%20a%20privacy%20enquiry.';
@@ -69,9 +65,9 @@ export default function PrivacyPolicy() {
             <div><dt>Financial year end</dt><dd>June</dd></div>
             <div><dt>Director &amp; privacy contact</dt><dd>Slingene Sigubudu</dd></div>
             <div><dt>Contact number</dt><dd><a href={`tel:${PHONE}`}>072 605 3707</a></dd></div>
-            <div className={styles.office}><dt>Registered office &amp; postal address on the certificate</dt><dd><address>Unit 13, Complex 2926, Cornflower Crescent<br />Fleurhof, Gauteng, 1709<br />South Africa</address></dd></div>
+            <div className={styles.office}><dt>Company contact address</dt><dd><address>{site.address.streetAddress}<br />{site.address.addressLocality}, {site.address.addressRegion}, {site.address.postalCode}<br />South Africa</address></dd></div>
           </dl>
-          <p className={styles.certificateNote}>Registration particulars and the office address are taken from the CIPC disclosure certificate issued on 23 June 2021.</p>
+          <p className={styles.certificateNote}>Registration particulars are taken from the CIPC disclosure certificate issued on 23 June 2021. The contact address was confirmed by the company on 8 November 2026.</p>
         </section>
 
         <div className={styles.layout}>

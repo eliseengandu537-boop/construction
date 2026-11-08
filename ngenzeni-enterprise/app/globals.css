@@ -136,3 +136,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
   .brand-light .brand-logo{width:200px;height:84px}
 }
 @media(max-width:360px){.brand-logo{width:132px;height:56px}}
+.contact-location{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;line-height:1.8}
+.contact-location strong{display:block;margin-bottom:10px}
+.contact-location address{font-style:normal;color:var(--muted)}
+.contact-location p{margin-top:12px;font-size:13px}
