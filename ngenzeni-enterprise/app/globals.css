@@ -55,7 +55,10 @@ html:has(dialog[open]){overflow:hidden}
 
 /* Let the opening section follow its content instead of leaving a viewport-sized gap. */
 .hero{height:auto;min-height:0;max-height:none}
-.hero-inner{height:auto;min-height:0;padding-bottom:56px}
+.hero-inner{height:auto;min-height:0;padding-top:124px;padding-bottom:36px}
+.hero-label{margin-bottom:20px}
+.hero-actions{margin-top:24px}
+.hero-trust{margin-top:24px}
 .hero h1{font-size:clamp(54px,5.4vw,88px);letter-spacing:-.045em;text-wrap:balance}
 .hero-copy>p{max-width:48ch;color:#f1ebe5}
 .hero-overlay{background:linear-gradient(100deg,rgba(7,21,36,.8),rgba(7,21,36,.54) 46%,rgba(7,21,36,.16)),linear-gradient(0deg,rgba(7,21,36,.5),transparent 65%)}
@@ -69,7 +72,7 @@ html:has(dialog[open]){overflow:hidden}
 }
 
 @media(max-width:760px){
-  .hero-inner{padding-top:112px;padding-bottom:28px}
+  .hero-inner{padding-top:104px;padding-bottom:24px}
   .hero-copy{max-width:560px}
   .hero-label{font-size:11px;line-height:1.5;padding:5px 11px;margin-bottom:18px}
   .hero h1{font-size:clamp(34px,10vw,56px);line-height:1.1;letter-spacing:-.04em;margin-bottom:18px}
@@ -118,8 +121,8 @@ html:has(dialog[open]){overflow:hidden}
 }
 
 /* Orange brand palette and the supplied roof-and-wordmark logo. */
-.nav-inner{height:84px}
-.brand-logo{display:block;width:174px;height:74px;object-fit:contain}
+.nav-inner{height:72px}
+.brand-logo{display:block;width:150px;height:64px;object-fit:contain}
 .brand-light{padding:0;background:transparent;border-radius:0}
 .brand-light .brand-logo{width:210px;height:88px}
 .button-primary{background:linear-gradient(155deg,#ff963f,#f97316);color:#142b41;border-color:#ffac6b;box-shadow:inset 0 1px 0 #ffffff60,0 3px 8px #9f400c20}
@@ -129,13 +132,13 @@ html:has(dialog[open]){overflow:hidden}
 .accent-icon,.resource-icon{background:linear-gradient(145deg,#ff973e,#f97316);color:#142b41;box-shadow:inset 0 1px 0 #ffffff55,0 2px 6px #9f400c24}
 ::selection{background:#ffd9b8;color:#142b41}
 a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline-color:#b6470c}
-@media(max-width:960px){.brand-logo{width:160px;height:68px}}
+@media(max-width:960px){.brand-logo{width:144px;height:61px}}
 @media(max-width:760px){
-  .nav-inner{height:72px}
-  .brand-logo{width:142px;height:60px}
+  .nav-inner{height:64px}
+  .brand-logo{width:128px;height:54px}
   .brand-light .brand-logo{width:200px;height:84px}
 }
-@media(max-width:360px){.brand-logo{width:132px;height:56px}}
+@media(max-width:360px){.brand-logo{width:120px;height:50px}}
 .contact-location{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;line-height:1.8}
 .contact-location strong{display:block;margin-bottom:10px}
 .contact-location address{font-style:normal;color:var(--muted)}
@@ -143,3 +146,17 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .contact-email{display:flex;align-items:center;gap:10px;width:fit-content;max-width:100%;min-height:44px;color:var(--accent);font-size:16px;font-weight:500;overflow-wrap:anywhere}
 .contact-email .icon{width:20px;height:20px;flex-shrink:0}
 .contact-email:hover span{text-decoration:underline;text-underline-offset:4px}
+
+/* Compact spacing between the homepage sections and below the opening banner. */
+.section-space{padding-block:64px}
+.about-section{padding-top:32px}
+.section-heading{gap:18px;margin-bottom:32px}
+@media(max-width:960px){
+  .section-space{padding-block:48px}
+  .about-section{padding-top:28px}
+}
+@media(max-width:760px){
+  .section-space{padding-block:36px}
+  .about-section{padding-top:24px}
+  .section-heading{gap:14px;margin-bottom:24px}
+}
