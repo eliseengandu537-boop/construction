@@ -53,9 +53,9 @@ html:has(dialog[open]){overflow:hidden}
 .footer-bottom .privacy-link{margin-left:0;font-size:inherit}
 .form-note a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 
-/* Let the opening section follow its content instead of leaving a viewport-sized gap. */
-.hero{height:auto;min-height:0;max-height:none}
-.hero-inner{height:auto;min-height:0;padding-top:124px;padding-bottom:36px}
+/* Fill the visible screen with the video, growing when the content needs more room. */
+.hero{height:auto;min-height:100svh;min-height:100dvh;max-height:none}
+.hero-inner{height:auto;min-height:inherit;padding-top:124px;padding-bottom:36px}
 .hero-label{margin-bottom:20px}
 .hero-actions{margin-top:24px}
 .hero-trust{margin-top:24px}
@@ -67,7 +67,7 @@ html:has(dialog[open]){overflow:hidden}
 @media(max-width:960px){
   .hero-inner{display:flex;flex-direction:column;align-items:flex-start;padding-bottom:28px}
   .hero-copy{width:100%;max-width:720px}
-  .hero-scroll-cue{position:static;margin-top:24px;gap:9px;font-size:11px;line-height:1.5}
+  .hero-scroll-cue{position:static;margin-top:auto;padding-top:24px;gap:9px;font-size:11px;line-height:1.5}
   .hero-scroll-cue>span{width:30px;height:30px}
 }
 
@@ -108,7 +108,7 @@ html:has(dialog[open]){overflow:hidden}
 @media(max-width:480px){
   .hero-actions{display:grid;grid-template-columns:1fr;width:100%;max-width:360px}
   .hero-actions>.button{width:100%;min-width:0}
-  .hero-scroll-cue{margin-top:22px}
+  .hero-scroll-cue{padding-top:22px}
   .section-space{padding-block:48px}
 }
 
