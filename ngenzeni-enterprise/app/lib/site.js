@@ -4,6 +4,7 @@ export const site = {
   legalName: 'Ngenzeni Enterprise (PTY) LTD',
   phone: '+27726053707',
   displayPhone: '072 605 3707',
+  email: 'info@ngenzeni.co.za',
   director: 'Slingene Sigubudu',
   registration: '2021/619191/07',
   address: {
@@ -50,11 +51,12 @@ export const businessSchema = {
   url: absoluteUrl('/'),
   description: 'Construction, renovations and property improvements across South Africa, with a company address in Fleurhof, Gauteng.',
   telephone: site.phone,
+  email: site.email,
   logo: absoluteUrl('/assets/ngenzeni-logo.webp'),
   address: { '@type': 'PostalAddress', ...site.address },
   areaServed: { '@type': 'Country', name: 'South Africa' },
   identifier: { '@type': 'PropertyValue', propertyID: 'CIPC registration number', value: site.registration },
-  contactPoint: { '@type': 'ContactPoint', telephone: site.phone, contactType: 'Project enquiries' },
+  contactPoint: { '@type': 'ContactPoint', telephone: site.phone, email: site.email, contactType: 'Project enquiries' },
 };
 
 export const websiteSchema = {

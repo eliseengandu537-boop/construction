@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
           <span className="section-label"><i /> YOUR INFORMATION, HANDLED WITH CARE</span>
           <h1>Privacy policy<span>.</span></h1>
           <p>Clear information about our company, the details you share with us, and your choices when you use this website.</p>
-          <div className={styles.updated}>Last updated <time dateTime="2026-11-08">8 November 2026</time><span>South Africa · POPIA</span></div>
+          <div className={styles.updated}>Last updated <time dateTime="2026-11-09">9 November 2026</time><span>South Africa · POPIA</span></div>
         </div>
 
         <section className={styles.companyCard} aria-labelledby="company-title">
@@ -65,6 +65,7 @@ export default function PrivacyPolicy() {
             <div><dt>Financial year end</dt><dd>June</dd></div>
             <div><dt>Director &amp; privacy contact</dt><dd>Slingene Sigubudu</dd></div>
             <div><dt>Contact number</dt><dd><a href={`tel:${PHONE}`}>072 605 3707</a></dd></div>
+            <div><dt>Email</dt><dd><a href={`mailto:${site.email}`}>{site.email}</a></dd></div>
             <div className={styles.office}><dt>Company contact address</dt><dd><address>{site.address.streetAddress}<br />{site.address.addressLocality}, {site.address.addressRegion}, {site.address.postalCode}<br />South Africa</address></dd></div>
           </dl>
           <p className={styles.certificateNote}>Registration particulars are taken from the CIPC disclosure certificate issued on 23 June 2021. The contact address was confirmed by the company on 8 November 2026.</p>
@@ -120,7 +121,7 @@ export default function PrivacyPolicy() {
             </PolicySection>
 
             <PolicySection index={6}>
-              <p>For a privacy question or request, contact Director <strong>Slingene Sigubudu</strong> on <a href={`tel:${PHONE}`}>072 605 3707</a>, or send a written request through <a href={PRIVACY_WHATSAPP} target="_blank" rel="noopener noreferrer">WhatsApp</a>. Describe the information or request concerned; we can explain what is needed to verify and respond to it. The company’s registered office details are provided above.</p>
+              <p>For a privacy question or request, contact Director <strong>Slingene Sigubudu</strong> on <a href={`tel:${PHONE}`}>072 605 3707</a>, email <a href={`mailto:${site.email}`}>{site.email}</a>, or send a written request through <a href={PRIVACY_WHATSAPP} target="_blank" rel="noopener noreferrer">WhatsApp</a>. Describe the information or request concerned; we can explain what is needed to verify and respond to it. The company’s registered office details are provided above.</p>
               <div className={styles.regulator}>
                 <h3>Information Regulator, South Africa</h3>
                 <p>You may raise a POPIA complaint directly with the Regulator. Its <a href="https://inforegulator.org.za/complaints/" target="_blank" rel="noopener noreferrer">complaints page</a> explains the current process and links to the eServices portal.</p>

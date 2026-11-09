@@ -140,3 +140,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .contact-location strong{display:block;margin-bottom:10px}
 .contact-location address{font-style:normal;color:var(--muted)}
 .contact-location p{margin-top:12px;font-size:13px}
+.contact-email{display:flex;align-items:center;gap:10px;width:fit-content;max-width:100%;min-height:44px;color:var(--accent);font-size:16px;font-weight:500;overflow-wrap:anywhere}
+.contact-email .icon{width:20px;height:20px;flex-shrink:0}
+.contact-email:hover span{text-decoration:underline;text-underline-offset:4px}
