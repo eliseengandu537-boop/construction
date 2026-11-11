@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
 export default async function ServicePage({ params }) {
   const service = getService((await params).slug);
   const url = absoluteUrl(`/services/${service.slug}`);
-  const whatsapp = `https://wa.me/27726053707?text=${encodeURIComponent(`Hello Slingene, I would like to enquire about ${service.title.toLowerCase()} with Ngenzeni Enterprise. My project is in: `)}`;
+  const whatsapp = `https://wa.me/${site.phone.replace('+', '')}?text=${encodeURIComponent(`Hello Slingene, I would like to enquire about ${service.title.toLowerCase()} with Ngenzeni Enterprise. My project is in: `)}`;
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [

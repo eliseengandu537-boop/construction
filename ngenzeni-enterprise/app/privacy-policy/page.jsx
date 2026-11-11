@@ -9,8 +9,8 @@ export const metadata = pageMetadata({
   path: '/privacy-policy',
 });
 
-const PHONE = '+27726053707';
-const PRIVACY_WHATSAPP = 'https://wa.me/27726053707?text=Hello%20Slingene%2C%20I%20have%20a%20privacy%20enquiry.';
+const PHONE = '+27105160856';
+const PRIVACY_WHATSAPP = 'https://wa.me/27105160856?text=Hello%20Slingene%2C%20I%20have%20a%20privacy%20enquiry.';
 const contents = [
   ['information', 'Information you provide'],
   ['purpose', 'How we use information'],
@@ -64,7 +64,7 @@ export default function PrivacyPolicy() {
             <div><dt>Registration date</dt><dd><time dateTime="2021-06-21">21 June 2021</time></dd></div>
             <div><dt>Financial year end</dt><dd>June</dd></div>
             <div><dt>Director &amp; privacy contact</dt><dd>Slingene Sigubudu</dd></div>
-            <div><dt>Contact number</dt><dd><a href={`tel:${PHONE}`}>072 605 3707</a></dd></div>
+            <div><dt>Contact number</dt><dd><a href={`tel:${PHONE}`}>010 516 0856</a></dd></div>
             <div><dt>Email</dt><dd><a href={`mailto:${site.email}`}>{site.email}</a></dd></div>
             <div className={styles.office}><dt>Company contact address</dt><dd><address>{site.address.streetAddress}<br />{site.address.addressLocality}, {site.address.addressRegion}, {site.address.postalCode}<br />South Africa</address></dd></div>
           </dl>
@@ -77,7 +77,7 @@ export default function PrivacyPolicy() {
               <h2>On this page</h2>
               <ol>{contents.map(([id, title]) => <li key={id}><a href={`#${id}`}>{title}</a></li>)}</ol>
             </nav>
-            <div className={styles.helpCard}><strong>A question about your details?</strong><p>Speak directly with Slingene.</p><a href={`tel:${PHONE}`}>072 605 3707 <span aria-hidden="true">↗</span></a></div>
+            <div className={styles.helpCard}><strong>A question about your details?</strong><p>Speak directly with Slingene.</p><a href={`tel:${PHONE}`}>010 516 0856 <span aria-hidden="true">↗</span></a></div>
           </aside>
 
           <div className={styles.policyBody}>
@@ -121,7 +121,7 @@ export default function PrivacyPolicy() {
             </PolicySection>
 
             <PolicySection index={6}>
-              <p>For a privacy question or request, contact Director <strong>Slingene Sigubudu</strong> on <a href={`tel:${PHONE}`}>072 605 3707</a>, email <a href={`mailto:${site.email}`}>{site.email}</a>, or send a written request through <a href={PRIVACY_WHATSAPP} target="_blank" rel="noopener noreferrer">WhatsApp</a>. Describe the information or request concerned; we can explain what is needed to verify and respond to it. The company’s registered office details are provided above.</p>
+              <p>For a privacy question or request, contact Director <strong>Slingene Sigubudu</strong> on <a href={`tel:${PHONE}`}>010 516 0856</a>, email <a href={`mailto:${site.email}`}>{site.email}</a>, or send a written request through <a href={PRIVACY_WHATSAPP} target="_blank" rel="noopener noreferrer">WhatsApp</a>. Describe the information or request concerned; we can explain what is needed to verify and respond to it. The company’s registered office details are provided above.</p>
               <div className={styles.regulator}>
                 <h3>Information Regulator, South Africa</h3>
                 <p>You may raise a POPIA complaint directly with the Regulator. Its <a href="https://inforegulator.org.za/complaints/" target="_blank" rel="noopener noreferrer">complaints page</a> explains the current process and links to the eServices portal.</p>
