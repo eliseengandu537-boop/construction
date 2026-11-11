@@ -32,7 +32,7 @@ npm start
 - Company introduction, residential/commercial information, construction process, FAQs and a downloadable planning checklist.
 - Responsive navigation, keyboard-accessible dialogs and reduced-motion support.
 - Local video, photos and fonts; no runtime media CDN dependency.
-- Call and WhatsApp links for Director Slingene Sigubudu: **010 516 0856**.
+- Call and WhatsApp links for Director Slingene Sigubudu: **010 516 0956**.
 - A dedicated `/privacy-policy` page with company registration details, the WhatsApp enquiry flow, POPIA rights and privacy contacts. Linked from the footer and enquiry form.
 
 The enquiry form prepares a WhatsApp message for the visitor to review and send. It does not send email, store enquiries, or require a backend account. It has a fallback link if a browser blocks the new WhatsApp tab.

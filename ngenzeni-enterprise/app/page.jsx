@@ -4,7 +4,7 @@ import { businessSchema, websiteSchema, pageMetadata } from './lib/site';
 
 export const metadata = pageMetadata({
   title: 'Construction & Renovations in South Africa',
-  description: 'Ngenzeni Enterprise offers building, renovations, roofing, paving and painting across South Africa. Based in Fleurhof, Gauteng. Call 010 516 0856.',
+  description: 'Ngenzeni Enterprise offers building, renovations, roofing, paving and painting across South Africa. Based in Fleurhof, Gauteng. Call 010 516 0956.',
   path: '/',
 });
 

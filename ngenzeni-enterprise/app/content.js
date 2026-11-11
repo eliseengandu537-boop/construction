@@ -13,7 +13,7 @@ export const projectTypes = [
 ];
 export const faqs = [
   ['What construction work can I enquire about?', 'Talk to us about general building, renovations, roofing, brickwork, plastering, paving, concrete work, painting and finishes. Project suitability, availability and specialist requirements are confirmed after reviewing your enquiry.'],
-  ['How do I request a quotation?', 'Call Director Slingene Sigubudu on 010 516 0856 or complete the project form below to prepare a WhatsApp enquiry. Share your location, a description of the work and any helpful photos or drawings.'],
+  ['How do I request a quotation?', 'Call Director Slingene Sigubudu on 010 516 0956 or complete the project form below to prepare a WhatsApp enquiry. Share your location, a description of the work and any helpful photos or drawings.'],
   ['What affects the cost of a project?', 'Project size, site conditions, materials, labour, access and the finish you choose all affect the quotation. A clear scope helps everyone understand what is included, what is excluded and who supplies the materials.'],
   ['Do I need drawings before getting in touch?', 'You can make an initial enquiry without drawings. Share the information you have and discuss whether plans or specialist input are needed before the construction scope is agreed.'],
   ['How long will the work take?', 'Timing depends on the scope, preparation, material availability, weather and specialist coordination. Discuss a proposed programme once the project has been assessed.'],
