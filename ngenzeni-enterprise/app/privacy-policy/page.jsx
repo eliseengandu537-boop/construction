@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
           <span className="section-label"><i /> YOUR INFORMATION, HANDLED WITH CARE</span>
           <h1>Privacy policy<span>.</span></h1>
           <p>Clear information about our company, the details you share with us, and your choices when you use this website.</p>
-          <div className={styles.updated}>Last updated <time dateTime="2026-11-09">9 November 2026</time><span>South Africa · POPIA</span></div>
+          <div className={styles.updated}>South Africa · POPIA</div>
         </div>
 
         <section className={styles.companyCard} aria-labelledby="company-title">
@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
           <dl className={styles.companyDetails}>
             <div><dt>Company registration number</dt><dd>2021/619191/07</dd></div>
             <div><dt>Enterprise type</dt><dd>Private company</dd></div>
-            <div><dt>Registration date</dt><dd><time dateTime="2021-06-21">21 June 2021</time></dd></div>
+            <div><dt>Registration date</dt><dd>21 June 2021</dd></div>
             <div><dt>Financial year end</dt><dd>June</dd></div>
             <div><dt>Director &amp; privacy contact</dt><dd>Slingene Sigubudu</dd></div>
             <div><dt>Contact number</dt><dd><a href={`tel:${PHONE}`}>010 516 0956</a></dd></div>
@@ -132,7 +132,7 @@ export default function PrivacyPolicy() {
             </PolicySection>
 
             <PolicySection index={7}>
-              <p>This policy covers this website and the enquiries it directs to Ngenzeni Enterprise. Other services you choose to use have their own policies. If the way this website handles information changes, this page will be updated with a new revision date and any further notice required by law.</p>
+              <p>This policy covers this website and the enquiries it directs to Ngenzeni Enterprise. Other services you choose to use have their own policies. If the way this website handles information changes, this page will be updated and any further notice required by law will be given.</p>
             </PolicySection>
           </div>
         </div>
